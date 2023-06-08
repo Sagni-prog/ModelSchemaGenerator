@@ -12,7 +12,7 @@ Copy the following into your composer.json file
     ],
 ```
 
-after copying your composer.json will be something like this
+After copying your composer.json will be something like this
 ```bash
 
 {
@@ -36,14 +36,12 @@ after copying your composer.json will be something like this
         "laravel/tinker": "^2.7",
         ...
     },
-    
-    ```
+```
     
     then run the following command
     
     ```bash
      composer require sagni/model
-     
     ```
 
 Usage
