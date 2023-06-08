@@ -41,7 +41,7 @@ After copying your composer.json will be something like this
     then run the following command
     
 ```bash
-   composer require sagni/model
+composer require sagni/model
 ```
 
 Usage
