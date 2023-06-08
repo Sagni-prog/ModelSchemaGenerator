@@ -3,7 +3,7 @@ Simple Laravel package that create model, migrations and database columns
 Installation
 ------------
 ```bash
-composer require --dev samasend/laravel-make-scope
+....
 ```
 
 Usage
