@@ -3,7 +3,12 @@ Simple Laravel package that create model, migrations and database columns
 Installation
 ------------
 ```bash
-....
+  "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Sagni-prog/ModelModelGenerator.git"
+        }
+    ],
 ```
 
 Usage
@@ -31,7 +36,7 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('post_title');
-	    $table->text('post_description');
+	        $table->text('post_description');
             $table->timestamps();
         });
     }
