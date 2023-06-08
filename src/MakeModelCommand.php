@@ -41,7 +41,7 @@ class MakeModelCommand extends Command
 
         return;
     }
-      echo $this->getMigrationPath($name,$path);
+    //   echo $this->getMigrationPath($name,$path);
       
      
       $this->createMigration($name,$path);

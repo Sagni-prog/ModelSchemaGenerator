@@ -15,10 +15,10 @@
     ],
     "require": {},
     "extra": {
-		"laravel": {
-			"providers": [
-				"Sagni\\Model\\MakeModelServiceProvider"
-			]
-		}
-	}
+        "laravel": {
+            "providers": [
+                "Sagni\\Model\\MakeModelServiceProvider"
+            ]
+        }
+    }
 }
