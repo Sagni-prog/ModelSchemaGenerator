@@ -2,6 +2,7 @@ Simple Laravel package that create model, migrations and database columns
 
 Installation
 ------------
+Copy the following into your composer.json file
 ```bash
   "repositories": [
         {
@@ -10,6 +11,40 @@ Installation
         }
     ],
 ```
+
+after copying your composer.json will be something like this
+```
+
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Sagni-prog/ModelModelGenerator.git"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "fruitcake/laravel-cors": "^2.0.5",
+        "guzzlehttp/guzzle": "^7.2",
+        "laravel/framework": "^9.0",
+        "laravel/sanctum": "^2.14",
+        "laravel/tinker": "^2.7",
+        ...
+    },
+    
+    ```
+    
+    then run the following command
+    
+    ```
+     composer require sagni/model
+     
+    ```
 
 Usage
 ----------------
