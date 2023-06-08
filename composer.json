@@ -1,0 +1,24 @@
+{
+    "name": "sagni/model",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sagni\\Model\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sagni Alemayehu",
+            "email": "sagnialemayehu69@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+		"laravel": {
+			"providers": [
+				"Sagni\\Model\\MakeModelServiceProvider"
+			]
+		}
+	}
+}
