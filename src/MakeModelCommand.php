@@ -41,7 +41,6 @@ class MakeModelCommand extends Command
 
         return;
     }
-    //   echo $this->getMigrationPath($name,$path);
       
      
       $this->createMigration($name,$path);
@@ -57,6 +56,7 @@ class MakeModelCommand extends Command
         $this->createModelFile($name);
 
         $this->info("Model '$name' created successfully.");
+       
     }
 
     /**
@@ -94,10 +94,11 @@ class MakeModelCommand extends Command
               $contents .= "$"."table->".$value."('".$key."');"."\n\t\t\t"; 
           }
           
+          $migration_name = $this->getMigrationPath($name,$path);
           $content = str_replace('{{ columns }}',$contents,$content);
-          file_put_contents($this->getMigrationPath($name,$path), $content);
+          file_put_contents($migration_name, $content);
+          $this->info("Migration '$migration_name' created successfully.");
 
-          echo $content;
     }
 
     /**
