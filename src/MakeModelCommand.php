@@ -96,7 +96,7 @@ class MakeModelCommand extends Command
           
           $migration_path = $this->getMigrationPath($name,$path);
           $content = str_replace('{{ columns }}',$contents,$content);
-          file_put_contents($migration_name, $content);
+          file_put_contents($migration_path, $content);
           $this->info("Migration '$migration_path' created successfully.");
           $migration_name = basename($migration_path);
           $this->info("Migration '$migration_name' created successfully.");
